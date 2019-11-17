@@ -36,7 +36,11 @@ titles = get_subreddits('')
 
 @app.route('/')
 def home():
-	return 'Substitute homepage'
+	return 'substitute homepage'
+
+@app.route('/hello')
+def hello():
+	return 'hi my name is edward'
 
 @ask.launch
 def init_skill():
